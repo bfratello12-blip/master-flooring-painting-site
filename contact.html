@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us | Master Flooring &amp; Painting &ndash; Long Island</title>
+  <meta name="description" content="Contact Master Flooring and Painting for residential and commercial painting, flooring, power washing, and deck staining across Long Island." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;700&family=Mulish:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="top-strip">
+    <p>Free On-Site Estimates Across Long Island &bull; Fully Insured</p>
+    <a class="top-strip__call" href="tel:+16316209793">Call (631) 620-9793</a>
+  </div>
+
+  <header class="site-header">
+    <div class="nav-wrap">
+      <a class="brand" href="index.html">
+        <picture>
+          <source srcset="assets/images/masterpaintinglogo.webp" media="(max-width: 640px)" />
+          <img src="assets/images/masterpaintinglogo.svg" alt="Master Flooring and Painting logo" />
+        </picture>
+      </a>
+      <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav id="site-nav" class="site-nav">
+        <div class="nav-dropdown">
+          <a href="index.html#services">Services</a>
+          <div class="nav-dropdown__menu">
+            <a href="residential-painting.html">Residential Painting</a>
+            <a href="commercial-painting.html">Commercial Painting</a>
+            <a href="power-washing.html">Power Washing</a>
+            <a href="flooring.html">Flooring</a>
+            <a href="deck-painting-staining.html">Deck Painting &amp; Staining</a>
+          </div>
+        </div>
+        <a href="index.html#work">Recent Work</a>
+        <a href="commercial-painting.html">Commercial</a>
+        <a href="reviews.html">Reviews</a>
+        <a href="contact.html">Contact</a>
+        <a href="#estimate">Free Estimate</a>
+      </nav>
+      <a class="btn btn--primary" href="tel:+16316209793">Call Now</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="service-hero" style="background-image: url('assets/images/interior_painting_corporate.webp');">
+      <div class="service-hero__overlay"></div>
+      <div class="service-hero__content container">
+        <span class="kicker">Contact Master Flooring &amp; Painting</span>
+        <h1>Let&apos;s Plan Your Next Painting, Flooring, or Power Washing Project</h1>
+        <p>Call us directly or send your project details using the form below. We serve both Nassau County and Suffolk County with fast responses and free estimates.</p>
+        <div class="hero__cta">
+          <a class="btn btn--primary" href="tel:+16316209793">Call (631) 620-9793</a>
+          <a class="btn btn--ghost" href="#estimate">Request an Estimate</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="service-detail container" style="padding-bottom: 2rem;">
+      <div class="service-detail__grid">
+        <div class="service-detail__copy">
+          <span class="kicker" style="border-color: var(--line); color: var(--ink-soft);">Contact Information</span>
+          <h2>Fast Scheduling and Clear Communication</h2>
+          <p>Our team is available Monday through Saturday to answer questions, review your scope, and schedule an on-site estimate.</p>
+          <ul>
+            <li><strong>Phone:</strong> <a href="tel:+16316209793">(631) 620-9793</a></li>
+            <li><strong>Email:</strong> <a href="mailto:masterflooringandpainting@gmail.com">masterflooringandpainting@gmail.com</a></li>
+            <li><strong>Service Area:</strong> Nassau County and Suffolk County</li>
+            <li><strong>Hours:</strong> Mon-Sat: 7:00 AM - 7:00 PM</li>
+          </ul>
+        </div>
+        <img class="service-detail__img" src="assets/images/exteriorpainting-before-after-house.webp" alt="Exterior painting project in Long Island" loading="lazy" />
+      </div>
+    </section>
+
+    <section class="estimate" id="estimate">
+      <div class="container estimate__grid">
+        <div class="estimate__pitch">
+          <span class="kicker">Free Estimate</span>
+          <h2>Tell Us About Your Project</h2>
+          <p>Submit your details and we will follow up quickly to discuss timeline, pricing, and next steps.</p>
+          <ul>
+            <li>Interior and exterior painting</li>
+            <li>Residential and commercial work</li>
+            <li>Flooring, power washing, and deck services</li>
+          </ul>
+          <a class="btn btn--ghost-dark" href="tel:+16316209793">Or Call (631) 620-9793</a>
+        </div>
+
+        <form class="lead-form" action="mailto:masterflooringandpainting@gmail.com" method="post" novalidate>
+          <h3>Get My Free Estimate</h3>
+          <label for="name">Full Name</label>
+          <input id="name" name="name" type="text" autocomplete="name" required />
+
+          <label for="phone">Phone Number</label>
+          <input id="phone" name="phone" type="tel" autocomplete="tel" required />
+
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" autocomplete="email" required />
+
+          <label for="service">Service Needed</label>
+          <select id="service" name="service" required>
+            <option value="">Select a service</option>
+            <option>Residential Painting</option>
+            <option>Commercial Painting</option>
+            <option>Flooring</option>
+            <option>Power Washing</option>
+            <option>Deck Painting &amp; Staining</option>
+            <option>Multiple Services</option>
+          </select>
+
+          <label for="message">Project Details</label>
+          <textarea id="message" name="message" rows="4" placeholder="Address, timeline, and project goals"></textarea>
+
+          <button type="submit" class="btn btn--primary btn--full">Submit My Free Estimate Request</button>
+          <p class="form-note">By submitting, you agree to be contacted by phone, email, or text regarding your estimate.</p>
+          <p class="form-status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <img src="assets/images/masterflooringandpaintinglogoSVGrectangleorangewhite.webp" alt="Master Flooring and Painting logo" />
+      <div>
+        <h4>Call for Fast Scheduling</h4>
+        <a href="tel:+16316209793">(631) 620-9793</a>
+      </div>
+      <div>
+        <h4>Email</h4>
+        <a href="mailto:masterflooringandpainting@gmail.com">masterflooringandpainting@gmail.com</a>
+      </div>
+      <div>
+        <h4>Hours</h4>
+        <p>Mon-Sat: 7:00 AM - 7:00 PM</p>
+      </div>
+    </div>
+    <p class="copyright">&copy; <span id="year"></span> Master Flooring &amp; Painting. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1117,6 +1117,66 @@ h1 {
   text-decoration: underline;
 }
 
+.locations-page {
+  background: linear-gradient(180deg, #f8fbff 0%, #edf3fb 100%);
+}
+
+.locations-intro {
+  padding-block: 4.2rem 2.1rem;
+}
+
+.locations-intro p {
+  color: var(--ink-soft);
+  max-width: 68ch;
+  margin: 0.8rem 0 0;
+}
+
+.locations-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.25rem;
+  padding-bottom: 3.2rem;
+}
+
+.county-card {
+  background: var(--white);
+  border: 1px solid rgba(15, 27, 45, 0.1);
+  border-radius: 16px;
+  box-shadow: 0 12px 26px rgba(15, 27, 45, 0.09);
+  padding: 1.05rem 1rem;
+}
+
+.county-card h2 {
+  font-size: clamp(1.6rem, 3.4vw, 2.2rem);
+  margin-bottom: 0.75rem;
+}
+
+.locations-list {
+  margin: 0;
+  padding-left: 1.2rem;
+  columns: 2;
+  column-gap: 1.45rem;
+}
+
+.locations-list li {
+  margin: 0 0 0.38rem;
+  color: var(--ink-soft);
+  break-inside: avoid;
+}
+
+.locations-cta {
+  background: linear-gradient(135deg, #12253f, #0c1628);
+  color: #fff;
+  text-align: center;
+  padding-block: 2.8rem;
+}
+
+.locations-cta p {
+  color: rgba(255, 255, 255, 0.86);
+  margin: 0.75rem auto 1.05rem;
+  max-width: 60ch;
+}
+
 /* â”€â”€ Responsive: service page elements â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 @media (max-width: 960px) {
   .service-detail__grid {
@@ -1134,6 +1194,14 @@ h1 {
   .why-us-grid {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .locations-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .locations-list {
+    columns: 3;
+  }
 }
 
 @media (max-width: 640px) {
@@ -1149,5 +1217,13 @@ h1 {
 
   .service-hero__content {
     padding-block: 5rem 2.5rem;
+  }
+
+  .locations-intro {
+    padding-top: 3.2rem;
+  }
+
+  .locations-list {
+    columns: 2;
   }
 }
