@@ -471,6 +471,10 @@ h1 {
   padding-block: 4.5rem;
 }
 
+#estimate {
+  scroll-margin-top: 7.5rem;
+}
+
 .estimate__grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
